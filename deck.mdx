@@ -1,7 +1,8 @@
-import { Appear, Head } from 'mdx-deck';
+import { Appear, Head, Image } from 'mdx-deck';
 import { Invert, Split } from 'mdx-deck/layouts';
+import { Layout } from './src'
 
-export { default as theme } from './theme';
+export { default as theme } from './src/theme';
 
 <Head>
   <title>Big fails theory</title>
@@ -10,6 +11,7 @@ export { default as theme } from './theme';
 ![](images/cover.jpg)
 
 ---
+export default Layout
 
 ![](images/logo_iso.png)
 
@@ -23,29 +25,29 @@ export { default as theme } from './theme';
 
 
 ```notes
-- Este es mi presente
+- This is me
+- Love learning
 ```
 
 ---
+export default Layout
 
 ## MY NAME IS MARTA
 # I am going to talk about my 📖
 
 ---
-import { Image } from 'mdx-deck'
-
 <Image src='images/joking.gif' />
-
 ---
-export default Invert
 
-# A long time ago...
+<Image src='images/longtimeago.png' />
 
 ```notes
+- Paginas web (HTML, CSS y algo de JQuery, incluso PHP)
 - Ingeniería informatica y ADE
 - Falta de practica y nuevas tecnologías
 ```
 ---
+export default Layout
 
 ![](images/ironhack.png)
 
@@ -60,9 +62,11 @@ export default Invert
 - Ironhack
 - Proyecto desde cero
 - Mejorar la calidad de mi codigo y aprender a trabajar en proyectos reales
+- Conocí a grandes profesionales y me metí en la comunidad
 ```
 
 ---
+export default Layout
 
 ![](images/Floqq.jpg)
 
@@ -74,22 +78,25 @@ export default Invert
 ```notes
 - Python
 - Javascript, Coffeescript, Handlebars... una autentica ruleta
-- Proyectos nuevos
+- Pero producto dejó de tener importancia y empezamos a hacer proyectos nuevos para terceros
+- Viaje a Dublin GDG -> Polymer
 ```
 
 ---
+export default Layout
 
-And **JS** came to me
+And **JS** (really) came to me
 
 ![](images/express.png)
 
 ```notes
 - Nuevo proyecto
 - Una oportunidad para aprender full stack JS
-- Llegó el final
+- Pero...Llegó el final, aunque no todo se acabó
 ```
 
 ---
+export default Invert
 
 ## Life is unexpected
 
@@ -97,28 +104,32 @@ MAD ✈️ SFO
 
 ```notes
 - Alvaro me pone en contacto con Milena
+- Estuvimos semanas pensando com enfocar el proyecto (funcionalidades, producto, negocio...)
 - MVP para Pear.vc -> Node + Express vs Ruby on Rails
 - Me voy
 ```
 
 ---
+export default Layout
 
-export default Split
-
-![](images/mindly.jpg)
+<img src='images/mindly.jpg'/>
 
 ## I co-founded a startup 😱
-- I worked and learnt like never before
-- CTO, CPO, Designer, junior developer, senior developer...
-- Rails + Web components (~2015)
+
+* CTO, Designer, developer... **WHATEVER**
+*
+* Rails + Web components
 
 ```notes
-- Startup way of life
+- Startup way of life, crazy summer
+- I worked and learnt like never before
 - Fail fast fail better
 - Improving code and reusing web components with rails -> REACTJS
 ```
 
 ---
+export default Layout
+
 
 ![](images/react.png)
 
@@ -127,6 +138,7 @@ export default Split
 🏃🏻‍♀️ Fail fast fail better ? Be faster
 
 ```notes
+- One summer to do the entire project
 - Reusing components
 - I need to be faster
 ```
@@ -147,10 +159,10 @@ SFO ✈️ MAD
 ```
 
 ---
-export default Split
+export default Layout
 
-![](images/graphql.png)
-![](images/react.png)
+![](images/stack.png)
+-
 
 ## Challenges... a lot of challenges
 
@@ -169,39 +181,51 @@ export default Split
 
 export default Invert
 
-### What's happening right now?
-
 ![](images/logo_iso.png)
+### What's happening right now?
+* ReactJS
+* NextJS
+* AI
+* Express + NodeJS
+* Gatsby
+
 
 ```notes
 - Express EJS -> Next.js + ReactJS + Styled components
+- Transform an not clean structure in something LEGIBLE
 ```
 ---
+export default Layout
+
 # ✅ DOs
 Think about the
-* Business (product)
-* Project (tech)
+* Business (Product)
+* Project (Tech)
 * Team (Hiring)
 
 ```notes
-- BUSINESS: Necesito sacar el proyecto rapido?
-- PROJECT: Escalará bien usando esta tecnología? Y la arcquitectura o el esquema de la base de datos? Que variables priman?
-- TEAM: Vas a necesitar contratar a gente en tu proyecto, ten cuidado con elegir tecnologías que no son demandadas.
+- BUSINESS: Necesito sacar el proyecto rapido? MINDLY explicar ejemplo
+
+- PROJECT: Escalará bien usando esta tecnología? Y la arcquitectura o el esquema de la base de datos? Que variables priman? Hay que tener todo esto en cuenta BILLIN explicar proceso GRAPHQL
 - PREGUNTA DINAMICA: Graphql en prod? Imaginad hace 2 años...
+
+- TEAM: Vas a necesitar contratar a gente en tu proyecto, ten cuidado con elegir tecnologías que no son demandadas.
 ```
 
 ---
+export default Layout
+
 # ❌ DON'Ts
 Think about the
-* Business (product)
-* Project (tech)
+* Business (Product)
+* Project (Tech)
 * Team (Hiring)
 
 
 ```notes
-- BUSINESS: El negocio no puede pervertir el producto. Market fit tambien tiene que ser probado
-- PROJECT: Do not overengineer Es mejor iterar poco a poco
-- TEAM: No te puedes dejar llevar por modas
+- BUSINESS: El negocio no puede pervertir el producto. Market fit tambien tiene que ser probado y la elección de tecnología no se puede ver influenciado por esto
+- PROJECT: Do not overengineer Es mejor iterar poco a poco MICROSERVICIOS EL PRIMER DÍA?
+- TEAM: No te puedes dejar llevar por modas. Panorama actual. ELIXIR, RAILS, etc.
 ```
 
 ---
@@ -210,6 +234,8 @@ export default Invert
 ## But the MOST important lesson
 
 ---
+export default Layout
+
 # TEAM
 👩🏻‍💻
 
@@ -217,10 +243,11 @@ export default Invert
 - Un proyecto itera gracias a la colaboración con el equipo
 - Los problemas o errores de decisiones cometidos pueden subsanarse de forma automatica con un workflow sano
 - Nada de code-blaming, cuando tengas una queja o creas que algo esta mal hecho busca una alternativa para solucionarlo
-- He encontrado todo tipo de compañeros en estos años.
+- He encontrado todo tipo de compañeros en estos años, y no todos los miembros de un equipo van a querer ser activos en la comunidad o tener side projects (VIAJAR, FOTOS, etc.).
 ```
 
 ---
 export default Invert
 
 # Thanks!
+JSDayCAN2018 🇮🇨
